@@ -1,9 +1,8 @@
 //
 //  FourSquareAPIHandler.swift
-//  TipBX
 //
 //  Created by Muthuraj on 09/12/16.
-//  Copyright © 2016 Sanjib Chakraborty. All rights reserved.
+//  Copyright © 2016 . All rights reserved.
 //
 
 import QuadratTouch
@@ -26,7 +25,7 @@ class FourSquareAPIHandler: NSObject {
         super.init()
         // Initialize the Foursquare client
         // TODO: update Client ID and Client Secret with actual premium account, personal account used for testing
-        let client = Client(clientID: "VV2001J13RM4C2PKBPHQOIVIMDFIYTFM4I0D5OTPL33GN0QB", clientSecret: "HYBKJD20NTZLKEQXJEYTYDKANO2WL2IAG3AWAEH34HVV1EF3", redirectURL: "")
+        let client = Client(clientID: "REPLACE YOUR CLIENT ID", clientSecret: "REPLACE YOUR CLIENT SECRET", redirectURL: "")
         
         let configuration = Configuration(client:client)
         Session.setupSharedSessionWithConfiguration(configuration)
