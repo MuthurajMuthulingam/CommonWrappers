@@ -1,9 +1,8 @@
 //
 //  AWSIoTHandler.swift
-//  TipBX
 //
 //  Created by Muthuraj on 13/12/16.
-//  Copyright © 2016 Sanjib Chakraborty. All rights reserved.
+//  Copyright © 2016. All rights reserved.
 //
 
 import UIKit
@@ -54,34 +53,24 @@ struct UserLocation {
 /// Struct to represent constants used inside AWSHandler
 struct AWSConstants {
     static let region = AWSRegionType.usWest2//"us-west-2"
-    static let cognitoIdentityPoolId = "us-west-2:e45e4584-06c8-4b7c-9022-447386256439"
-    static let certificateSigningRequestCommonName = "TipBx App"
+    static let cognitoIdentityPoolId = "POOL ID"
+    static let certificateSigningRequestCommonName = "YOUR App"
     static let certificateSigningRequestCountryName = "US"
-    static let certificateSigningRequestOrganizationName = "TipBx"
-    static let certificateSigningRequestOrganizationalUnitName = "TipBx"
-    static let policyName = "Tipbx-ios-app-policy"
-    static let certificatePassword = "tempyml123"
+    static let certificateSigningRequestOrganizationName = "YOUR APP NAME"
+    static let certificateSigningRequestOrganizationalUnitName = "YOUR APP NAME"
+    static let policyName = "YOURAPP-ios-app-policy"
+    static let certificatePassword = "PASSWORD"
     static let PKCS12FileExtension = "p12"
     static let certificateARN = "from-bundle"
     
     // topics
     enum Topics : String{
-        case tippeePublish = "tippee/update/location"
-        case tipperPublish = "tipper/update/location"
-        case nearbyTippees = "publish/nearbyinterests/"
+        // YOUR TOPICS INTERESTED
         
         func string() -> String{
             return rawValue
         }
     }
-    
-    /*AwsRegion: us-west-2
-     CognitoIdentityPoolId : "us-west-2:e45e4584-06c8-4b7c-9022-447386256439"
-     CertificateSigningRequestCommonName = "TipBx App"
-     CertificateSigningRequestCountryName = "US"
-     CertificateSigningRequestOrganizationName = "TipBx"
-     CertificateSigningRequestOrganizationalUnitName = "TipBx"
-     PolicyName = "Tipbx-ios-app-policy"*/
 }
 
 /**
